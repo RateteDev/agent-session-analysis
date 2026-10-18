@@ -66,7 +66,7 @@ async function loadFile(file: File) {
 }
 
 async function loadSample(name: string) {
-  const response = await fetch(`/samples/${encodeURIComponent(name)}`)
+  const response = await fetch(`./samples/${encodeURIComponent(name)}`)
   if (!response.ok) {
     showError(
       `サンプル ${name} を取得できませんでした（HTTP ${response.status}）。`,

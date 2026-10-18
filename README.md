@@ -16,7 +16,8 @@
 
 ## 閲覧UI
 
-Bun（1.4系）で動きます。
+公開版は<https://ratetdev.github.io/agent-session-analysis/>で見られます。
+ローカルで動かすにはBun（1.4系）が必要です。
 
 ```sh
 bun install
