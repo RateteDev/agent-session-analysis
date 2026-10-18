@@ -16,13 +16,15 @@
 
 ## 閲覧UI
 
+Bun（1.4系）で動きます。
+
 ```sh
 bun install
-just serve
+bun run src/server.ts --host 0.0.0.0 --port 4180
 ```
 
-既定では`0.0.0.0:4180`で待ち受けます。
-`just serve <host> <port>`で変更できます。
+`--host`と`--port`で待ち受け先を変えられます。
+`--dev`を付けると、編集が再起動なしで画面に反映されます。
 
 - 起動直後は、`samples/full-coffee-site.jsonl`を表示します。
 - ヘッダーの「開く」・ドラッグ＆ドロップ・クリップボードからの貼り付けで、手元のJSONLを開けます。
@@ -32,5 +34,7 @@ just serve
 ## 検査
 
 ```sh
-just ci-local
+bunx biome check .
+bunx tsc --noEmit
+bun test tests
 ```

@@ -4,13 +4,7 @@
     "enabled": false
   },
   "files": {
-    "includes": [
-      "**",
-      "!!node_modules",
-      "!!output",
-      "!!format.jsonc",
-      "!!src/web/assets/icons"
-    ]
+    "includes": ["**", "!!node_modules", "!!output", "!!src/web/assets/icons"]
   },
   "formatter": {
     "enabled": true,
