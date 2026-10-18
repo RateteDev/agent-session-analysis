@@ -1,0 +1,6 @@
+{"record":"meta","schema_version":"0.3","content":"full","harness":"example-cloud-agent","title":"トークン数を持たないハーネスの例","source":null,"extracted_at":"2026-01-15T09:30:00Z"}
+{"record":"event","seq":1,"turn":1,"req":null,"ts":"2026-01-15T11:00:00.000Z","provider":null,"model":null,"block":{"role":"user","type":"text","tool":null,"content":"テストを実行して結果を教えてください。","file":null},"tokens":null}
+{"record":"event","seq":2,"turn":1,"req":null,"ts":"2026-01-15T11:00:04.000Z","provider":null,"model":null,"block":{"role":"assistant","type":"thinking","tool":null,"content":"テストコマンドを実行する。","file":null},"tokens":null}
+{"record":"event","seq":3,"turn":1,"req":null,"ts":"2026-01-15T11:00:05.000Z","provider":null,"model":null,"block":{"role":"assistant","type":"tool_use","tool":"shell","content":"{\"command\":\"bun test\"}","file":null},"tokens":null}
+{"record":"event","seq":4,"turn":1,"req":null,"ts":"2026-01-15T11:00:09.000Z","provider":null,"model":null,"block":{"role":"tool","type":"tool_result","tool":"shell","content":"3 pass\n0 fail\nRan 3 tests across 1 file. [210.00ms]","file":null},"tokens":null}
+{"record":"event","seq":5,"turn":1,"req":null,"ts":"2026-01-15T11:00:10.000Z","provider":null,"model":null,"block":{"role":"assistant","type":"text","tool":null,"content":"3件すべて成功しました。","file":null},"tokens":null}

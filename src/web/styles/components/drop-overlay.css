@@ -1,0 +1,32 @@
+@layer structure {
+  .drop-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    pointer-events: none;
+  }
+
+  .drop-overlay-message {
+    margin: 0;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+}
+
+@layer design {
+  .drop-overlay {
+    background: var(--color-overlay);
+  }
+
+  .drop-overlay-message {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    border: 1px dashed var(--color-ring);
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+}

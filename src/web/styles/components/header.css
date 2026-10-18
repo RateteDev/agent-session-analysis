@@ -1,0 +1,47 @@
+@layer structure {
+  .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .app-header h1 {
+    margin-inline-end: auto;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 40rem) {
+    .app-header-open {
+      position: fixed;
+      inset-block-end: 1rem;
+      inset-inline-end: 1rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: 0;
+    }
+  }
+}
+
+@layer design {
+  .app-header {
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .app-header h1 {
+    font-weight: 600;
+  }
+
+  @media (max-width: 40rem) {
+    .app-header-open {
+      background: var(--color-primary);
+      color: var(--color-primary-foreground);
+      border-color: var(--color-primary);
+      border-radius: 50%;
+    }
+  }
+}

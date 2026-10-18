@@ -1,0 +1,61 @@
+@layer structure {
+  .archive {
+    padding: 1rem;
+  }
+
+  .archive-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .archive-heading {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .archive-title {
+    font-size: 1.25rem;
+  }
+
+  .archive-meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.125rem 0.5rem;
+    margin: 0;
+    font-size: 0.75rem;
+  }
+
+  .archive-meta dd {
+    margin: 0;
+  }
+
+  .archive-meta dt::after {
+    content: ":";
+  }
+
+  @media (max-width: 40rem) {
+    .archive {
+      padding-inline: 0.5rem;
+    }
+
+    .archive-head {
+      padding-inline: 0.5rem;
+    }
+  }
+}
+
+@layer design {
+  .archive-title {
+    font-weight: 600;
+  }
+
+  .archive-meta dt {
+    color: var(--color-muted-foreground);
+  }
+}

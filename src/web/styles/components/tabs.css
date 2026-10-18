@@ -1,0 +1,32 @@
+@layer structure {
+  .tabs {
+    display: inline-flex;
+    gap: 0.125rem;
+    padding: 0.125rem;
+  }
+
+  .tabs-button {
+    min-height: 2rem;
+    padding-inline: 0.75rem;
+  }
+}
+
+@layer design {
+  .tabs {
+    background: var(--color-muted);
+    border-radius: 0.375rem;
+  }
+
+  .tabs-button {
+    background: none;
+    border: 0;
+    border-radius: 0.25rem;
+    color: var(--color-muted-foreground);
+    font-weight: 500;
+  }
+
+  .tabs-button[aria-pressed="true"] {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+}

@@ -1,0 +1,38 @@
+@layer structure {
+  .message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .message {
+    padding: 0.75rem 1rem;
+  }
+
+  .message-role {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .message-body {
+    font-size: 0.9375rem;
+    white-space: pre-wrap;
+  }
+}
+
+@layer design {
+  .message {
+    background: var(--color-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+  }
+
+  .message-role {
+    color: var(--color-muted-foreground);
+    font-weight: 500;
+  }
+}
